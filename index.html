@@ -52,7 +52,7 @@
         }
 
         nav.active {
-            transform: translateX(0); 
+            transform: translateX(0);
         }
 
         nav h2 {
@@ -80,7 +80,8 @@
             transition: background-color 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
         }
 
-        .nav-btn i { width: 20px; text-align: center; }
+        .nav-btn i { width: 20px; text-align: center;
+        }
 
         .nav-btn:hover {
             background-color: #1abc9c;
@@ -136,7 +137,7 @@
         /* MENSAJE DE ADVERTENCIA PARA ROTACIÓN        */
         /* ------------------------------------------- */
         #orientation-warning {
-            display: none; 
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -165,21 +166,37 @@
 
 
         /* Secciones, tarjetas, fórmulas, etc. */
-        .section { display: none; opacity: 0; transform: translateY(6px); transition: opacity 0.45s ease, transform 0.45s ease; }
-        .section.active { display: block; }
-        .section.visible { opacity: 1; transform: translateY(0); }
-        .card { background: rgba(255,255,255,0.95); border-radius: 12px; padding: 1.5em; box-shadow: 0 8px 22px rgba(16,24,40,0.06); margin-bottom: 18px; line-height: 1.5; }
-        h1 { font-size: 28px; margin-bottom: 8px; }
-        h2 { font-size: 20px; margin-bottom: 8px; }
-        h3 { font-size: 16px; margin-bottom: 8px; }
-        p { margin-bottom: 12px; color: #1e293b; }
-        p[style*="font-weight:600"] { text-align: center; }
-        table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-        th, td { padding: 8px 10px; border-bottom: 1px solid #e6eef6; text-align: left; font-size: 0.95em; }
-        footer { margin-top: 26px; padding: 18px; border-radius: 10px; background-color: rgba(236,240,241,0.9); text-align: center; font-size: 0.9em; color: #0f172a; }
-        figure { margin: 14px 0; text-align: center; }
-        figure video { max-width: 100%; border-radius: 8px; display: inline-block; }
-        figcaption { font-size: 0.9em; color: #475569; margin-top: 6px; }
+        .section { display: none;
+            opacity: 0; transform: translateY(6px); transition: opacity 0.45s ease, transform 0.45s ease;
+        }
+        .section.active { display: block;
+        }
+        .section.visible { opacity: 1; transform: translateY(0);
+        }
+        .card { background: rgba(255,255,255,0.95); border-radius: 12px; padding: 1.5em;
+            box-shadow: 0 8px 22px rgba(16,24,40,0.06); margin-bottom: 18px; line-height: 1.5; }
+        h1 { font-size: 28px;
+            margin-bottom: 8px; }
+        h2 { font-size: 20px; margin-bottom: 8px;
+        }
+        h3 { font-size: 16px; margin-bottom: 8px;
+        }
+        p { margin-bottom: 12px; color: #1e293b;
+        }
+        p[style*="font-weight:600"] { text-align: center;
+        }
+        table { width: 100%; border-collapse: collapse; margin-top: 8px;
+        }
+        th, td { padding: 8px 10px; border-bottom: 1px solid #e6eef6; text-align: left;
+            font-size: 0.95em; }
+        footer { margin-top: 26px; padding: 18px; border-radius: 10px; background-color: rgba(236,240,241,0.9);
+            text-align: center; font-size: 0.9em; color: #0f172a; }
+        figure { margin: 14px 0;
+            text-align: center; }
+        figure video { max-width: 100%; border-radius: 8px; display: inline-block;
+        }
+        figcaption { font-size: 0.9em; color: #475569; margin-top: 6px;
+        }
 
 
         /* ------------------------------------------- */
@@ -221,7 +238,7 @@
         }
 
         #sidebar-mapa.open {
-            transform: translateX(0); 
+            transform: translateX(0);
         }
 
         #sidebar-mapa h2 {
@@ -322,16 +339,25 @@
         }
         
         /* Definición de colores para los tipos */
-        .type-eólica { background-color: #2ecc71; border-color: #27ae60; }
-        .type-solar { background-color: #f39c12; border-color: #e67e22; }
-        .type-hidroeléctrica { background-color: #3498db; border-color: #2980b9; }
-        .type-biomasa { background-color: #8e44ad; border-color: #9b59b6; }
-        .type-geotérmica { background-color: #e74c3c; border-color: #c0392b; }
-        .type-nuclear { background-color: #95a5a6; border-color: #7f8c8d; }
-        .type-fósil { background-color: #7f8c8d; border-color: #6c7a89; }
+        .type-eólica { background-color: #2ecc71;
+            border-color: #27ae60; }
+        .type-solar { background-color: #f39c12; border-color: #e67e22;
+        }
+        .type-hidroeléctrica { background-color: #3498db; border-color: #2980b9;
+        }
+        .type-biomasa { background-color: #8e44ad; border-color: #9b59b6;
+        }
+        .type-geotérmica { background-color: #e74c3c; border-color: #c0392b;
+        }
+        .type-nuclear { background-color: #95a5a6; border-color: #7f8c8d;
+        }
+        .type-fósil { background-color: #7f8c8d; border-color: #6c7a89;
+        }
 
-        .popup-content h4 { margin-top: 0; margin-bottom: 5px; font-size: 1.1em; color: #223044; }
-        .popup-content p { margin: 2px 0; font-size: 0.9em; }
+        .popup-content h4 { margin-top: 0; margin-bottom: 5px; font-size: 1.1em; color: #223044;
+        }
+        .popup-content p { margin: 2px 0; font-size: 0.9em;
+        }
 
         /* ------------------------------------------- */
         /* RESPONSIVE Y ORIENTACIÓN HORIZONTAL (Mantenido) */
@@ -339,21 +365,32 @@
         
         /* Ocultar el contenido y mostrar advertencia en Portrait */
         @media (max-width: 768px) and (orientation: portrait) {
-            body { display: block; overflow: hidden; }
-            nav, main, footer, #menu-toggle { display: none !important; }
-            #orientation-warning { display: flex; }
+            body { display: block;
+                overflow: hidden; }
+            nav, main, footer, #menu-toggle { display: none !important;
+            }
+            #orientation-warning { display: flex;
+            }
         }
 
         /* Ajustes para pantallas más pequeñas en modo LANDSCAPE (donde sí se ve) */
         @media (max-width: 600px) and (orientation: landscape) {
-            main { padding: 15px; padding-top: 60px; }
-            #menu-toggle { top: 10px; left: 10px; width: 35px; height: 35px; font-size: 16px; }
-            h1 { font-size: 1.6em; }
-            h2 { font-size: 1.3em; }
-            .card { padding: 0.8em; }
-            nav { width: 250px; }
-            #sidebar-mapa { width: 300px; }
-            #sidebar-toggle-mapa { right: 10px; top: 10px; width: 40px; height: 40px; }
+            main { padding: 15px;
+                padding-top: 60px; }
+            #menu-toggle { top: 10px; left: 10px;
+                width: 35px; height: 35px; font-size: 16px; }
+            h1 { font-size: 1.6em;
+            }
+            h2 { font-size: 1.3em;
+            }
+            .card { padding: 0.8em;
+            }
+            nav { width: 250px;
+            }
+            #sidebar-mapa { width: 300px;
+            }
+            #sidebar-toggle-mapa { right: 10px; top: 10px; width: 40px;
+                height: 40px; }
         }
     </style>
 </head>
@@ -370,14 +407,21 @@
     </button>
 
     <nav id="sidebar-nav">
-        <h2>El ABC de la Energía<br><small style="font-weight:400;opacity:.9">Conceptos y Rendimiento</small></h2>
+   
+         <h2>El ABC de la Energía<br><small style="font-weight:400;opacity:.9">Conceptos y Rendimiento</small></h2>
 
-        <button class="nav-btn active" id="btn-conceptos" onclick="showSection('conceptos','#f9f9f9', this)"><i class="fas fa-bolt"></i><span class="label">1. Energía, Trabajo y Potencia</span></button>
-        <button class="nav-btn" id="btn-renovables" onclick="showSection('renovables','#d6f5d6', this)"><i class="fas fa-leaf"></i><span class="label">2. Renovables / No Renovables</span></button>
-        <button class="nav-btn" id="btn-historia" onclick="showSection('historia','#b3e6b3', this)"><i class="fas fa-history"></i><span class="label">3. Historia en Argentina</span></button>
-        <button class="nav-btn" id="btn-tipos" onclick="showSection('tipos','#ffe0b3', this)"><i class="fas fa-solar-panel"></i><span class="label">4. Tipos de EERR</span></button>
-        <button class="nav-btn" id="btn-mapa" onclick="showSection('mapa','#cce0ff', this)"><i class="fas fa-map-marked-alt"></i><span class="label">5. Mapa Interactivo</span></button>
-        <button class="nav-btn" id="btn-simulador" onclick="showSection('simulador','#ffb3d9', this)"><i class="fas fa-cogs"></i><span class="label">6. Simulador Fotovoltaico</span></button>
+        <button class="nav-btn active" id="btn-conceptos" onclick="showSection('conceptos','#f9f9f9', this)"><i class="fas fa-bolt"></i><span class="label">1.
+            Energía, Trabajo y Potencia</span></button>
+        <button class="nav-btn" id="btn-renovables" onclick="showSection('renovables','#d6f5d6', this)"><i class="fas fa-leaf"></i><span class="label">2.
+            Renovables / No Renovables</span></button>
+        <button class="nav-btn" id="btn-historia" onclick="showSection('historia','#b3e6b3', this)"><i class="fas fa-history"></i><span class="label">3.
+            Historia en Argentina</span></button>
+        <button class="nav-btn" id="btn-tipos" onclick="showSection('tipos','#ffe0b3', this)"><i class="fas fa-solar-panel"></i><span class="label">4.
+            Tipos de EERR</span></button>
+        <button class="nav-btn" id="btn-mapa" onclick="showSection('mapa','#cce0ff', this)"><i class="fas fa-map-marked-alt"></i><span class="label">5.
+            Mapa Interactivo</span></button>
+        <button class="nav-btn" id="btn-simulador" onclick="showSection('simulador','#ffb3d9', this)"><i class="fas fa-cogs"></i><span class="label">6.
+            Simulador Fotovoltaico</span></button>
     </nav>
 
     <main id="main-content">
@@ -387,159 +431,222 @@
                 <h1>La Base de Nuestra Matriz Energética: Energía, Trabajo y Potencia</h1>
                 <div>
                     <p>
-                    Cuando hablamos de energía, muchas veces escuchamos que “es la capacidad que tiene un cuerpo para realizar trabajo”. Esta definición, muy usada en química y biología, suena correcta… pero a los físicos nos deja un poco inconformes. ¿Por qué? Porque es como decir que la energía sirve para hacer lo que hace la energía: una definición que gira en círculo.
-                    </p>
+    
+                        Cuando hablamos de energía, muchas veces escuchamos que “es la capacidad que tiene un cuerpo para realizar trabajo”.
+                        Esta definición, muy usada en química y biología, suena correcta… pero a los físicos nos deja un poco inconformes.
+                        ¿Por qué? Porque es como decir que la energía sirve para hacer lo que hace la energía: una definición que gira en círculo.
+                        </p>
 
                     <p>
-                    Entonces, ¿qué es realmente la energía? Si lo pensamos, todo a nuestro alrededor depende de ella. Cuando comemos un alfajor, aprovechamos la energía química de los alimentos para que nuestro cuerpo funcione. Cuando encendemos la luz, usamos energía eléctrica para transformar la oscuridad en claridad. En ambos casos hay energía, aunque se presente de formas distintas.
-                    </p>
+                        Entonces, ¿qué es realmente la energía?
+                        Si lo pensamos, todo a nuestro alrededor depende de ella.
+                        Cuando comemos un alfajor, aprovechamos la energía química de los alimentos para que nuestro cuerpo funcione.
+                        Cuando encendemos la luz, usamos energía eléctrica para transformar la oscuridad en claridad.
+                        En ambos casos hay energía, aunque se presente de formas distintas.
+                        </p>
 
                     <p>
-                    Por eso, una definición más completa sería decir que la energía es la capacidad que tiene un cuerpo para transformarse a sí mismo o transformar su entorno. Y aunque esta idea se acerca bastante, la realidad es que la energía es un concepto tan amplio que no hay una única definición que logre abarcar todas sus manifestaciones. Maxwell, uno de los grandes físicos de la historia, la definió como una función escalar que permite calcular el trabajo, una manera más matemática de expresar lo mismo: la energía es una forma de medir los cambios que ocurren en el mundo.
-                    </p>
+                        Por eso, una definición más completa sería decir que la energía es la capacidad que tiene un cuerpo para transformarse a sí mismo o transformar su entorno.
+                        Y aunque esta idea se acerca bastante, la realidad es que la energía es un concepto tan amplio que no hay una única definición que logre abarcar todas sus manifestaciones.
+                        Maxwell, uno de los grandes físicos de la historia, la definió como una función escalar que permite calcular el trabajo, una manera más matemática de expresar lo mismo: la energía es una forma de medir los cambios que ocurren en el mundo.
+                        </p>
 
                     <p>
-                    Un ejemplo claro de esto lo vemos en un saltador con pértiga. Cuando corre hacia la barra, acumula energía cinética. Al apoyar la pértiga, esa energía se transforma en energía potencial elástica, al doblarse la vara, y luego en energía potencial gravitacional, al elevarse su cuerpo. En el punto más alto, la pértiga ya no está doblada y casi toda la energía inicial del atleta se ha convertido en energía gravitacional: es decir, ha cambiado de forma, pero no ha desaparecido.
-                    </p>
+                        Un ejemplo claro de esto lo vemos en un saltador con pértiga.
+                        Cuando corre hacia la barra, acumula energía cinética. Al apoyar la pértiga, esa energía se transforma en energía potencial elástica, al doblarse la vara, y luego en energía potencial gravitacional, al elevarse su cuerpo.
+                        En el punto más alto, la pértiga ya no está doblada y casi toda la energía inicial del atleta se ha convertido en energía gravitacional: es decir, ha cambiado de forma, pero no ha desaparecido.
+                        </p>
 
                     <p style="text-align:center; margin-top:10px;">
                         <figure>
-                            <video src="assets/gif_saltobarra.mp4" alt="Saltador con pértiga — gif_saltobarra" loop muted autoplay playsinline loading="lazy"></video>
-                            <figcaption>Video: secuencia simplificada del salto con pértiga (archivo: <code>assets/gif_saltobarra.mp4</code>).</figcaption>
+                            <video src="Assets/gif_saltobarra.mp4" alt="Saltador con pértiga — gif_saltobarra" loop muted autoplay playsinline loading="lazy"></video>
+               
+                            <figcaption>Video: secuencia simplificada del salto con pértiga (archivo: <code>Assets/gif_saltobarra.mp4</code>).</figcaption>
                         </figure>
                     </p>
                     
-                    <p>
-                    Y justamente ahí está lo fascinante: la energía no se crea ni se destruye, solo se transforma. Esto es lo que conocemos como la **Ley de Conservación de la Energía** o **Primer Principio de la Termodinámica**. Desde el funcionamiento de nuestro cuerpo hasta el movimiento de un atleta o la electricidad de nuestras casas, todo lo que sucede en el universo es, en el fondo, un constante intercambio y transformación de energía.
-                    </p>
+               
+                        <p>
+                        Y justamente ahí está lo fascinante: la energía no se crea ni se destruye, solo se transforma.
+                        Esto es lo que conocemos como la **Ley de Conservación de la Energía** o **Primer Principio de la Termodinámica**.
+                        Desde el funcionamiento de nuestro cuerpo hasta el movimiento de un atleta o la electricidad de nuestras casas, todo lo que sucede en el universo es, en el fondo, un constante intercambio y transformación de energía.
+                        </p>
 
                     <h2>Trabajo: La Transferencia de Energía</h2>
 
                     <p>
-                    Cuando decimos que la energía puede transformarse, en realidad estamos hablando de cómo las fuerzas actúan sobre los cuerpos y les transfieren energía. Esa transferencia recibe un nombre muy particular en física: trabajo.
-                    </p>
+                        Cuando decimos que la energía puede transformarse, en realidad estamos hablando de cómo las fuerzas actúan sobre los cuerpos y les transfieren energía.
+                        Esa transferencia recibe un nombre muy particular en física: trabajo.
+                        </p>
 
                     <p>
-                    En la vida cotidiana usamos la palabra “trabajo” para hablar de esfuerzo, pero en física tiene un significado más preciso. Una fuerza realiza trabajo sobre un cuerpo cuando lo desplaza en la misma dirección (o parcialmente en la misma dirección) que la fuerza aplicada. Si empujamos una caja y esta se mueve, estamos realizando trabajo sobre ella: parte de la energía de quien empuja se transfiere al objeto.
-                    </p>
+                        En la vida cotidiana usamos la palabra “trabajo” para hablar de esfuerzo, pero en física tiene un significado más preciso.
+                        Una fuerza realiza trabajo sobre un cuerpo cuando lo desplaza en la misma dirección (o parcialmente en la misma dirección) que la fuerza aplicada.
+                        Si empujamos una caja y esta se mueve, estamos realizando trabajo sobre ella: parte de la energía de quien empuja se transfiere al objeto.
+                        </p>
 
                     <p>
-                    Matemáticamente, el trabajo es una magnitud **escalar** que se define como:
-                    </p>
+                        Matemáticamente, el trabajo es una magnitud **escalar** que se define como:
+                        </p>
 
                     <p style="font-weight:600; text-align: center;">
-                        \( W = F \cdot d \cdot \cos(\theta) \)
-                    </p>
+       
+                         \( W = F \cdot d \cdot \cos(\theta) \)
+                        </p>
 
                     <p>
-                    donde:
-                    </p>
+                        donde:
+               
+                        </p>
                     <ul>
                         <li>\(W\) es el trabajo (medido en joules, J),</li>
                         <li>\(F\) es la magnitud de la fuerza aplicada,</li>
+             
                         <li>\(d\) es el desplazamiento del objeto, y</li>
                         <li>\(\theta\) es el ángulo entre la fuerza y el desplazamiento.</li>
                     </ul>
 
                     <p>
-                    Es importante notar que el trabajo puede ser **negativo**. Esto ocurre cuando la fuerza aplicada es opuesta al desplazamiento, como la fuerza de fricción que actúa para frenar un objeto o la gravedad cuando subimos un objeto. Esto significa que la fuerza está *extrayendo* energía del sistema.
-                    </p>
+          
+                        Es importante notar que el trabajo puede ser **negativo**.
+                        Esto ocurre cuando la fuerza aplicada es opuesta al desplazamiento, como la fuerza de fricción que actúa para frenar un objeto o la gravedad cuando subimos un objeto.
+                        Esto significa que la fuerza está *extrayendo* energía del sistema.
+                        </p>
 
                     <p>
-                    Cuando una fuerza realiza trabajo sobre un cuerpo, lo que hace es cambiar su energía. Si el cuerpo gana velocidad, su energía aumenta; si se eleva o comprime un resorte, la energía se almacena de otra forma. De ahí surgen los diferentes tipos de energía.
-                    </p>
+                        Cuando una fuerza realiza trabajo sobre un cuerpo, lo que hace es cambiar su energía.
+                        Si el cuerpo gana velocidad, su energía aumenta; si se eleva o comprime un resorte, la energía se almacena de otra forma.
+                        De ahí surgen los diferentes tipos de energía.
+                        </p>
 
                     <h3>Energía Cinética</h3>
                     <p>
-                    La energía cinética está asociada al movimiento. Cuanto mayor sea la masa y la velocidad de un objeto, mayor será su energía cinética. Su expresión matemática es:
-                    </p>
+                        La energía cinética está asociada al movimiento.
+                        Cuanto mayor sea la masa y la velocidad de un objeto, mayor será su energía cinética.
+                        Su expresión matemática es:
+                        </p>
                     <p style="font-weight:600; text-align: center;">\( E_c = \dfrac{1}{2} m v^2 \)</p>
-                    <p>donde <em>m</em> es la masa del cuerpo y <em>v</em> su velocidad. Si aplicamos una fuerza sobre un cuerpo y este acelera, el trabajo realizado sobre él se traduce en un aumento de su energía cinética.</p>
+                    <p>donde <em>m</em> es la masa del cuerpo y <em>v</em> su velocidad.
+                        Si aplicamos una fuerza sobre un cuerpo y este acelera, el trabajo realizado sobre él se traduce en un aumento de su energía cinética.</p>
 
                     <h3>Energía Potencial Gravitacional</h3>
                     <p>
-                    Cuando un cuerpo se encuentra a cierta altura sobre la superficie terrestre, tiene la capacidad de caer y realizar trabajo gracias a la fuerza de gravedad. A esa capacidad la llamamos energía potencial gravitacional, y depende de la masa del objeto, de la aceleración de la gravedad y de la altura a la que se encuentra:
-                    </p>
+                        Cuando un cuerpo se encuentra a cierta altura sobre la superficie terrestre, tiene la capacidad 
+                        de caer y realizar trabajo gracias a la fuerza de gravedad.
+                        A esa capacidad la llamamos energía potencial gravitacional, y depende de la masa del objeto, de la aceleración de la gravedad y de la altura a la que se encuentra:
+                        </p>
                     <p style="font-weight:600; text-align: center;">\( E_{pg} = m \cdot g \cdot h \)</p>
+                    
                     <p>donde: <em>m</em> es la masa del cuerpo, <em>g</em> es la aceleración de la gravedad (9,8 m/s²) y <em>h</em> es la altura respecto a un **nivel de referencia** (el cual se elige arbitrariamente, como el suelo o el fondo de un valle).</p>
 
                     <p>
-                    Cuanto más alto esté un objeto, más energía potencial gravitacional posee, porque puede transformarla en movimiento al caer.
-                    </p>
+                        Cuanto más alto esté un objeto, más energía potencial gravitacional posee, porque puede transformarla en movimiento al caer.
+                        </p>
 
                     <h3>Energía Potencial Elástica</h3>
                     <p>
-                    Otro tipo de energía almacenada es la energía potencial elástica, que aparece cuando deformamos un cuerpo elástico, como un resorte, una goma o incluso la pértiga del atleta del ejemplo anterior. Su expresión matemática es:
-                    </p>
+                        Otro tipo de energía almacenada es la energía potencial elástica, que aparece cuando deformamos un cuerpo elástico, como un resorte, una goma o incluso la pértiga del atleta del ejemplo anterior.
+                        Su expresión matemática es:
+                        </p>
                     <p style="font-weight:600; text-align: center;">\( E_{pe} = \dfrac{1}{2} k x^2 \)</p>
                     <p>donde <em>k</em> es la constante elástica del resorte y <em>x</em> la deformación respecto a su posición natural (estiramiento o compresión).</p>
 
-                    <p>
-                    Esta energía se libera cuando el cuerpo vuelve a su forma original, transformándose nuevamente en energía cinética o en otro tipo de energía.
-                    </p>
+         
+                        <p>
+                        Esta energía se libera cuando el cuerpo vuelve a su forma original, transformándose nuevamente en energía cinética o en otro tipo de energía.
+                        </p>
 
                     <h3>Energía Mecánica y su Conservación</h3>
                     <p>
-                    Si sumamos la energía cinética (movimiento) y la energía potencial (posición o deformación), obtenemos la energía mecánica total de un cuerpo o sistema:
-                    </p>
+                        Si sumamos la energía cinética (movimiento) y la energía potencial (posición o deformación), obtenemos la energía mecánica total de un cuerpo o sistema:
+              
+                        </p>
                     <p style="font-weight:600; text-align: center;">\( E_m = E_c + E_p \)</p>
-                    <p>donde \(E_p\) puede ser gravitacional o elástica, según el caso. En sistemas donde sólo actúan fuerzas conservativas (como la gravedad o la elasticidad), la energía mecánica total se conserva, lo que significa que no se pierde, sino que se transforma continuamente entre sus distintas formas.</p>
+                    <p>donde \(E_p\) puede ser gravitacional o elástica, según el caso.
+                        En sistemas donde sólo actúan fuerzas conservativas (como la gravedad o la elasticidad), la energía mecánica total se conserva, lo que significa que no se pierde, sino que se transforma continuamente entre sus distintas formas.</p>
 
                     <h2>Potencia: La Rapidez de la Transformación</h2>
 
                     <p>
-                    A lo largo de todo este recorrido vimos cómo la energía puede transformarse y conservarse, y cómo el trabajo permite que esas transformaciones ocurran. Pero no todas las transformaciones de energía suceden al mismo ritmo. Esa diferencia en la rapidez con que se realiza trabajo o se transforma energía es lo que en física llamamos **potencia**.
-                    </p>
+                        A 
+                        lo largo de todo este recorrido vimos cómo la energía puede transformarse y conservarse, y cómo el trabajo permite que esas transformaciones ocurran.
+                        Pero no todas las transformaciones de energía suceden al mismo ritmo.
+                        Esa diferencia en la rapidez con que se realiza trabajo o se transforma energía es lo que en física llamamos **potencia**.
+                        </p>
 
                     <p>
-                    La potencia mide cuánta energía se transforma en un cierto tiempo, o, dicho de otro modo, con qué rapidez se realiza trabajo. Matemáticamente, se define como:
-                    </p>
+                        La potencia mide cuánta energía se transforma en un cierto tiempo, o, dicho de otro modo, con qué rapidez se realiza trabajo.
+                        Matemáticamente, se define como:
+                        </p>
                     <p style="font-weight:600; text-align: center;">\( P = \dfrac{W}{t} \)</p>
-                    <p>donde \(P\) representa la potencia, \(W\) el trabajo realizado y \(t\) el tiempo empleado. Su unidad es el **watt (W)**, que equivale a un joule por segundo (J/s). Así, una máquina con una potencia de 1000 W transforma mil joules de energía cada segundo. En la industria y en el ámbito residencial, la energía consumida se mide generalmente en **kilovatios-hora (kWh)**, que es la potencia (kW) multiplicada por el tiempo (h).</p>
+                    <p>donde \(P\) representa la potencia, \(W\) el trabajo realizado y \(t\) el tiempo empleado.
+                        Su unidad es el **watt (W)**, que equivale a un joule por segundo (J/s).
+                        Así, una máquina con una potencia de 1000 W transforma mil joules de energía cada segundo.
+                        En la industria y en el ámbito residencial, la energía consumida se mide generalmente en **kilovatios-hora (kWh)**, que es la potencia (kW) multiplicada por el tiempo (h).</p>
 
                     <p>
-                    Esta idea, que puede parecer sencilla, fue clave para el desarrollo tecnológico. A partir de ella, el ser humano pudo comparar y diseñar máquinas no solo según la cantidad de trabajo que podían hacer, sino también según qué tan rápido podían hacerlo.
-                    </p>
+                        Esta idea, que puede parecer sencilla, fue clave para el desarrollo tecnológico.
+                        A partir de ella, el ser humano pudo comparar y diseñar máquinas no solo según la cantidad de trabajo que podían hacer, sino también según qué tan rápido podían hacerlo.
+                        </p>
 
                     <p>
-                    En el ámbito industrial, la potencia está directamente relacionada con la productividad y la eficiencia. Dos máquinas pueden realizar exactamente el mismo trabajo —por ejemplo, levantar una carga hasta cierta altura—, pero la diferencia está en cuánto tardan. La que lo haga en menos tiempo será más potente, porque transforma la energía con mayor rapidez.
-                    </p>
+                        En el ámbito industrial, la potencia está directamente relacionada con la productividad y la eficiencia.
+                        Dos máquinas pueden realizar exactamente el mismo trabajo —por ejemplo, levantar una carga hasta cierta altura—, pero la diferencia está en cuánto tardan.
+                        La que lo haga en menos tiempo será más potente, porque transforma la energía con mayor rapidez.
+                        </p>
 
                     <h2>Eficiencia: La Conversión Real</h2>
                     
                     <p>
-                    Sin embargo, no toda la energía que recibe una máquina se aprovecha en forma útil: parte de ella se pierde en calor, rozamiento o ruido. Esto se debe a que, según el **Segundo Principio de la Termodinámica** (o ley de la entropía), es imposible que un sistema convierta el 100% de la energía de entrada en trabajo útil. Por eso, además de conocer la potencia, es fundamental medir qué fracción de la energía total se transforma realmente en trabajo útil, algo que llamamos **eficiencia energética**.
-                    </p>
+                        Sin embargo, no toda la energía que recibe una máquina se aprovecha en forma útil: parte de 
+                        ella se pierde en calor, rozamiento o ruido. Esto se debe a que, según el **Segundo Principio de la Termodinámica** (o ley de la entropía), es imposible que un sistema convierta el 100% de la energía de entrada en trabajo útil.
+                        Por eso, además de conocer la potencia, es fundamental medir qué fracción de la energía total se transforma realmente en trabajo útil, algo que llamamos **eficiencia energética**.
+                        </p>
 
                     <p>
-                    La eficiencia se define como la relación entre la potencia útil que entrega una máquina y la potencia total que consume. Ningún dispositivo alcanza el 100 % de eficiencia, porque siempre hay pérdidas inevitables. Aun así, el desarrollo tecnológico busca reducir esas pérdidas, optimizando el uso de la energía y aumentando el rendimiento de los sistemas.
-                    </p>
+                        La eficiencia se define como la relación entre la potencia útil que entrega una máquina y la potencia total que consume.
+                        Ningún dispositivo alcanza el 100 % de eficiencia, porque siempre hay pérdidas inevitables.
+                        Aun así, el desarrollo tecnológico busca reducir esas pérdidas, optimizando el uso de la energía y aumentando el rendimiento de los sistemas.
+                        </p>
 
                     <h3>El Desafío de la Sostenibilidad: Conectando Física y Ecología 🌍</h3>
 
                     <p>
-                    De esta manera, el concepto de potencia nos permite conectar el mundo abstracto de la física con la realidad concreta de las máquinas y la industria. Comprender cómo se transforma la energía, con qué rapidez se hace y cuánta se pierde en el proceso, es el primer paso para analizar más adelante cómo producimos, usamos y aprovechamos la energía en nuestra vida diaria. Y también para preguntarnos algo fundamental: ¿cómo lograr que esas transformaciones sean cada vez más eficientes y sostenibles?
-                    </p>
+                        De esta manera, el concepto de potencia nos permite conectar el mundo abstracto de la física con la realidad concreta de las máquinas y la industria.
+                        Comprender cómo se transforma la energía, con qué rapidez se hace y cuánta se pierde en el proceso, es el primer paso para analizar más adelante cómo producimos, usamos y aprovechamos la energía en nuestra vida diaria.
+                        Y también para preguntarnos algo fundamental: ¿cómo lograr que esas transformaciones sean cada vez más eficientes y sostenibles?
+                        </p>
 
                     <p>
-                    Responderla obliga a mirar más allá de la máquina individual y considerar la naturaleza del recurso energético y sus costos a largo plazo. Las fuentes tradicionales basadas en combustibles fósiles presentan límites claros: muchos motores de combustión convierten solo una fracción (orden del 20 % en algunos motores de autos) de la energía química en trabajo mecánico, y plantas térmicas suelen tener eficiencias modestamente superiores, con pérdidas importantes. Además, la extracción y el uso de estos combustibles generan externalidades —contaminación, emisiones de gases de efecto invernadero, impactos sobre ecosistemas— que comprometen su sostenibilidad.
-                    </p>
+                        Responderla obliga a mirar más allá de la máquina individual y considerar la naturaleza del recurso energético y sus costos a largo plazo.
+                        Las fuentes tradicionales basadas en combustibles fósiles presentan límites claros: muchos motores de combustión convierten solo una fracción (orden del 20 % en algunos motores de autos) de la energía química en trabajo mecánico, y plantas térmicas suelen tener eficiencias modestamente superiores, con pérdidas importantes.
+                        Además, la extracción y el uso de estos combustibles generan externalidades —contaminación, emisiones de gases de efecto invernadero, impactos sobre ecosistemas— que comprometen su sostenibilidad.
+                        </p>
 
                     <p>
-                    Por el contrario, las fuentes renovables (solar, eólica, geotérmica, mareomotriz, entre otras) aprovechan flujos energéticos naturales y, en general, reducen las externalidades ambientales. Presentan desafíos técnicos propios —intermitencia en solar y eólica, necesidades de almacenamiento y redes inteligentes— pero permiten diseñar sistemas energéticos menos dependientes de recursos finitos y con menor impacto ambiental. Algunas fuentes renovables, como la geotermia, ofrecen una producción continua y estable; otras requieren infraestructuras de almacenamiento o integración a la red para ser plenamente aprovechadas.
-                    </p>
+                        Por el contrario, las fuentes renovables (solar, eólica, geotérmica, mareomotriz, entre otras) aprovechan flujos energéticos naturales y, en general, reducen las externalidades ambientales.
+                        Presentan desafíos técnicos propios —intermitencia en solar y eólica, necesidades de almacenamiento y redes inteligentes— pero permiten diseñar sistemas energéticos menos dependientes de recursos finitos y con menor impacto ambiental.
+                        Algunas fuentes renovables, como la geotermia, ofrecen una producción continua y estable;
+                        otras requieren infraestructuras de almacenamiento o integración a la red para ser plenamente aprovechadas.
+                        </p>
 
                     <p>
-                    En otras palabras: pensar en eficiencia energética ya no es solo maximizar la potencia útil por unidad de energía consumida; es evaluar la huella ambiental, la disponibilidad sostenida del recurso y el costo (económico y ecológico) de su adopción. La transición hacia fuentes renovables implica un doble objetivo: reducir la dependencia de combustibles fósiles y disminuir el impacto ambiental, mientras se mantiene o mejora el rendimiento de nuestras máquinas y procesos.
-                    </p>
+                        En otras palabras: pensar en eficiencia energética ya no es solo maximizar la potencia útil por unidad de energía consumida;
+                        es evaluar la huella ambiental, la disponibilidad sostenida del recurso y el costo (económico y ecológico) de su adopción.
+                        La transición hacia fuentes renovables implica un doble objetivo: reducir la dependencia de combustibles fósiles y disminuir el impacto ambiental, mientras se mantiene o mejora el rendimiento de nuestras máquinas y procesos.
+                        </p>
 
                     <p>
-                    Desde la perspectiva de la física industrial esto tiene consecuencias prácticas: optimizar procesos, diseñar máquinas más eficientes, implementar recuperación de calor, mejorar la gestión de la demanda, y combinar esto con fuentes de baja huella y con sistemas de almacenamiento y redes inteligentes. Solo así se puede construir un modelo energético resiliente y equilibrado.
-                    </p>
+                        Desde la perspectiva de la física industrial esto tiene consecuencias prácticas: optimizar procesos, diseñar máquinas más eficientes, implementar recuperación de calor, mejorar la gestión de la demanda, y combinar esto con fuentes de baja huella y con sistemas de almacenamiento y redes inteligentes.
+                        Solo así se puede construir un modelo energético resiliente y equilibrado.
+                        </p>
 
                     <p>
-                    En definitiva, la pregunta que hemos planteado al principio —¿cómo lograr transformaciones más eficientes y sostenibles?— no tiene una solución única ni puramente técnica. Es una pregunta sistémica que exige integrar física, ingeniería, economía y políticas públicas. La física nos da las herramientas para medir, comparar y optimizar las transformaciones energéticas; el desafío es aplicar esas herramientas pensando en el largo plazo: elegir fuentes con menor huella, reducir pérdidas, y rediseñar sistemas para que la energía que usamos hoy no comprometa la vida de las generaciones futuras.
-                    </p>
+                        En definitiva, la pregunta que hemos planteado al principio —¿cómo lograr transformaciones más eficientes y sostenibles?— no tiene una solución única ni puramente técnica.
+                        Es una pregunta sistémica que exige integrar física, ingeniería, economía y políticas públicas.
+                        La física nos da las herramientas para medir, comparar y optimizar las transformaciones energéticas;
+                        el desafío es aplicar esas herramientas pensando en el largo plazo: elegir fuentes con menor huella, reducir pérdidas, y rediseñar sistemas para que la energía que usamos hoy no comprometa la vida de las generaciones futuras.
+                        </p>
                 </div>
 
             </article>
@@ -548,14 +655,17 @@
                 <h2>Tabla resumen rápido</h2>
                 <table>
                     <thead>
+     
                         <tr><th>Concepto</th><th>Fórmula</th><th>Unidad</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>Energía cinética</td><td>\(E_k=\tfrac{1}{2}mv^2\)</td><td>J</td></tr>
+                
                         <tr><td>Energía potencial gravitacional</td><td>\(E_p=mgh\)</td><td>J</td></tr>
                         <tr><td>Trabajo</td><td>\(W=F\cdot d\cdot\cos(\theta)\)</td><td>J</td></tr>
                         <tr><td>Potencia</td><td>\(P=\dfrac{W}{t}\)</td><td>W (J/s)</td></tr>
                         <tr><td>Energía eléctrica</td><td>\(E=P\cdot t\)</td><td>kWh, J</td></tr>
+             
                         <tr><td>Eficiencia</td><td>\(\eta=\dfrac{E_{\text{útil}}}{E_{\text{entrada}}}\)</td><td>adimensional / %</td></tr>
                     </tbody>
                 </table>
@@ -565,6 +675,7 @@
 
         <section id="renovables" class="section">
             <article class="card">
+        
                 <h1>Energías Renovables y No Renovables</h1>
                 <p>Placeholder / marco teórico — aquí estará el texto ampliado sobre la definición, origen y ejemplos de cada tipo.</p>
             </article>
@@ -572,66 +683,74 @@
 
         <section id="historia" class="section">
             <article class="card">
+           
                 <h1>La Transición Energética en Argentina</h1>
                 <h2 style="font-size: 1rem; color: #555; font-weight: 400; margin-top: -5px; margin-bottom: 20px;">Entre la Potencialidad de los Recursos y las Barreras Estructurales</h2>
-
                 <div>
                     <p>
-                        En el actual escenario de transición energética global, impulsada por la urgencia de la crisis climática y los compromisos del Acuerdo de París, el mundo avanza decididamente hacia la descarbonización, un cambio estructural donde Argentina ocupa una posición de relevancia estratégica fundamental. El país encarna una tensión característica de las economías emergentes: posee una coexistencia única entre un vasto y excepcional potencial de recursos naturales renovables y una serie de persistentes desafíos estructurales —macroeconómicos, técnicos y regulatorios— que históricamente han condicionado su aprovechamiento. Evaluar este panorama requiere ir más allá de las cifras superficiales para comprender la compleja interacción entre la política pública, la inversión privada y la realidad industrial del país.
-                    </p>
-
-                    
+                        En el actual escenario de transición energética global, impulsada por la urgencia de la crisis climática y los compromisos del Acuerdo de París, el mundo avanza decididamente hacia la descarbonización, un cambio estructural donde Argentina ocupa una posición de relevancia estratégica fundamental.
+                        El país encarna una tensión característica de las economías emergentes: posee una coexistencia única entre un vasto y excepcional potencial de recursos naturales renovables y una serie de persistentes desafíos estructurales —macroeconómicos, técnicos y regulatorios— que históricamente han condicionado su aprovechamiento.
+                        Evaluar este panorama requiere ir más allá de las cifras superficiales para comprender la compleja interacción entre la política pública, la inversión privada y la realidad industrial del país.
+                        </p>
                     <h2>1. Evolución Histórica: La Primera Etapa (1998-2015)</h2>
                     <p>
-                        Para entender el presente, es imperativo desglosar la evolución histórica del marco normativo, la cual revela patrones de riesgo y lecciones aprendidas que son cruciales para cualquier inversor. Una primera etapa, que abarca desde 1998 hasta 2015, se caracterizó por intentos iniciales que, si bien sentaron precedentes legislativos, arrojaron resultados sumamente limitados.
-                    </p>
+                        Para entender el presente, es imperativo desglosar la evolución histórica del marco normativo, la cual revela patrones de riesgo y lecciones aprendidas que son cruciales para cualquier inversor.
+                        Una primera etapa, que abarca desde 1998 hasta 2015, se caracterizó por intentos iniciales que, si bien sentaron precedentes legislativos, arrojaron resultados sumamente limitados.
+                        </p>
                     <p>
-                        Durante este período se sancionaron leyes como la <strong>Ley 25.019</strong> en 1998 y la <strong>Ley 26.190</strong> en 2006; esta última fijó la ambiciosa meta de alcanzar un 8% del consumo eléctrico nacional con fuentes renovables para el año 2016 e implementó beneficios fiscales y remuneraciones adicionales. También se lanzó el <strong>Programa GENREN</strong> en 2009, el primer intento de utilizar subastas para contratos a 15 años en dólares.
-                    </p>
+                        Durante este período se sancionaron leyes como la <strong>Ley 25.019</strong> en 1998 y la <strong>Ley 26.190</strong> en 2006;
+                        esta última fijó la ambiciosa meta de alcanzar un 8% del consumo eléctrico nacional con fuentes renovables para el año 2016 e implementó beneficios fiscales y remuneraciones adicionales.
+                        También se lanzó el <strong>Programa GENREN</strong> en 2009, el primer intento de utilizar subastas para contratos a 15 años en dólares.
+                        </p>
                     <p>
-                        Sin embargo, la falta de acceso a financiamiento, las demoras en la reglamentación, el congelamiento de tarifas eléctricas y la insuficiencia de incentivos económicos frente a la inflación conspiraron contra estos objetivos. El fracaso de esta etapa fue evidente: para 2015, apenas el 1.9% de la demanda eléctrica era cubierta por fuentes renovables, muy lejos de la meta del 8% prometida, demostrando que los incentivos aislados, sin garantías robustas ni mecanismos de contratación competitivos, son ineficaces en el volátil contexto argentino.
-                    </p>
-
+                        Sin embargo, las condiciones de volatilidad macroeconómica y la falta de instrumentos de mitigación de riesgo crearon barreras de financiamiento prácticamente insalvables para los proyectos, dejando la mayor parte de las leyes y programas anteriores ineficaces en el volátil contexto argentino.
+                        </p>
                     <h2>2. El Punto de Inflexión: Ley 27.191 y Nuevos Instrumentos</h2>
                     <p>
-                        Esta realidad cambió drásticamente en 2015 con la sanción de la <strong>Ley 27.191</strong>, que marcó el inicio de una segunda etapa de consolidación regulatoria al establecer metas obligatorias y progresivas —como alcanzar el 20% de la matriz para 2025— y diseñar un ecosistema de instrumentos robusto. El éxito inicial de este régimen se basó en la diversificación de los mecanismos de contratación, principalmente a través del <strong>Programa RenovAr</strong> (licitaciones públicas con contratos a 20 años en dólares) y el <strong>Mercado a Término (MATER)</strong> para grandes usuarios.
-                    </p>
+                        Esta realidad cambió drásticamente en 2015 con la sanción de la <strong>Ley 27.191</strong>, que marcó el inicio de una segunda etapa de consolidación regulatoria al establecer metas obligatorias y progresivas —como alcanzar el 20% de la matriz para 2025— y diseñar un ecosistema de instrumentos robusto.
+                        El éxito inicial de este régimen se basó en la diversificación de los mecanismos de contratación, principalmente a través del <strong>Programa RenovAr</strong> (licitaciones públicas con contratos a 20 años en dólares) y el <strong>Mercado a Término (MATER)</strong> para grandes usuarios.
+                        </p>
                     <p>
-                        Un componente decisivo fue la creación del Fondo Fiduciario para el Desarrollo de Energías Renovables (FODER), que no solo ofrecía financiamiento, sino que actuaba fundamentalmente como una garantía de pago para mitigar el riesgo de la contraparte estatal (CAMMESA), mejorando así la bancabilidad de los proyectos ante inversores internacionales. Posteriormente, este marco se amplió para incluir a la ciudadanía a través de la Ley 27.424 de 2017, que fomentó la Generación Distribuida, permitiendo a los usuarios inyectar excedentes a la red. Más recientemente, y ante la necesidad de atraer capital intensivo en un contexto de alto riesgo país, en 2024 se aprobó el Régimen de Incentivo para Grandes Inversiones (RIGI), que ofrece estabilidad normativa por 30 años y beneficios agresivos en materia aduanera y cambiaria.
-                    </p>
-
-                    
+                        Un componente decisivo fue la creación del Fondo Fiduciario para el Desarrollo de Energías Renovables (FODER), que no solo ofrecía financiamiento, sino que actuaba fundamentalmente como una garantía de pago para mitigar el riesgo de la contraparte estatal (CAMMESA), mejorando así la bancabilidad de los proyectos ante inversores internacionales.
+                        Posteriormente, este marco se amplió para incluir a la ciudadanía a través de la Ley 27.424 de 2017, que fomentó la Generación Distribuida, permitiendo a los usuarios inyectar excedentes a la red.
+                        Más recientemente, y ante la necesidad de atraer capital intensivo en un contexto de alto riesgo país, en 2024 se aprobó el Régimen de Incentivo para Grandes Inversiones (RIGI), que ofrece estabilidad normativa por 30 años y beneficios agresivos en materia aduanera y cambiaria.
+                        </p>
                     <h2>3. Resultados y Vulnerabilidades (2015-2023)</h2>
                     <p>
-                        El análisis de los resultados de este régimen entre 2015 y 2023 muestra un avance cuantitativo innegable pero también vulnerabilidades críticas. La potencia instalada renovable dio un salto significativo, pasando del 1.94% de la matriz en 2015 al 13.13% en 2023, logrando cubrir el 14.3% de la demanda eléctrica. Además, el programa RenovAr logró reducir los precios de los contratos por debajo del costo promedio de generación del sistema, demostrando competitividad inicial.
-                    </p>
-                    <p>
-                        No obstante, la sostenibilidad financiera del modelo se reveló frágil ante la inestabilidad macroeconómica; la crisis iniciada en 2018 y el cierre de los mercados de crédito paralizaron gran parte de los proyectos adjudicados en las rondas posteriores. Mientras que en la Ronda 1 el 90% de los proyectos logró el cierre financiero, en la Ronda 3 solo el 2% llegó a operar comercialmente, evidenciando que la dependencia del financiamiento externo fue el "talón de Aquiles" del programa.
-                    </p>
-
+                        El análisis de los resultados de este régimen entre 2015 y 2023 muestra un avance cuantitativo innegable pero también vulnerabilidades críticas.
+                        La potencia instalada renovable dio un salto significativo, pasando del 1.94% de la matriz en 2015 al 13.13% en 2023, logrando cubrir el 14.3% de la demanda en el balance energético global.
+                        Sin embargo, los vaivenes financieros y los cambios macroeconómicos posteriores (2018-2023) impactaron severamente en la concreción de los proyectos: mientras que en las Rondas 1 y 2 de RenovAr el 80% de los proyectos logró el cierre financiero, en la Ronda 3 solo el 2% llegó a operar comercialmente, evidenciando que la dependencia del financiamiento externo fue el "talón de Aquiles" del programa.
+                        </p>
                     <h2>4. Perspectiva Industrial y Cadena de Valor</h2>
                     <p>
-                        Desde una perspectiva industrial, el modelo priorizó la velocidad de instalación y la reducción de costos sobre el desarrollo de la cadena de valor local. Al privilegiar el precio en las licitaciones, se favoreció la importación de tecnología: en el caso de la energía eólica, el 85% de la inversión en aerogeneradores fue importada, relegando a la industria nacional a componentes de menor complejidad como las torres. Asimismo, el mercado se concentró en grandes actores corporativos, con una participación marginal de cooperativas o PyMEs, aunque se destaca la generación de aproximadamente 17,400 empleos directos y una federalización de las inversiones hacia regiones como la Patagonia y el NOA.
-                    </p>
-
+                        Desde una perspectiva industrial, el modelo priorizó la velocidad de instalación y la reducción de costos sobre el desarrollo de la cadena de valor local.
+                        Al privilegiar el precio en las licitaciones, se favoreció la importación de tecnología: en el caso de la energía eólica, el 85% de la inversión en aerogeneradores fue importada, relegando a la industria nacional a componentes de menor complejidad como las torres.
+                        Asimismo, el mercado se concentró en grandes actores corporativos, con una participación marginal de cooperativas o PyMEs, aunque se destaca la generación de aproximadamente 17,400 empleos directos y una federalización de las inversiones hacia regiones como la Patagonia y el NOA.
+                        </p>
                     <h2>5. Ventaja Competitiva: Recursos de Clase Mundial</h2>
                     <p>
-                        A pesar de estos desafíos, Argentina mantiene una ventaja competitiva estructural basada en sus recursos naturales de clase mundial. El potencial eólico en la Patagonia es excepcional, con factores de capacidad que pueden llegar al 60%, superando ampliamente los promedios de Europa (25%) y Estados Unidos (35%). De igual forma, el Noroeste argentino ofrece niveles de irradiación solar entre los mejores del planeta, con rendimientos superiores en un 15-20% a otras regiones comparables. Estos recursos no solo permiten generar electricidad barata, sino que habilitan sinergias con vectores energéticos emergentes como la producción de hidrógeno verde, el desarrollo de la cadena de valor del litio y las baterías para almacenamiento, y la electromovilidad.
-                    </p>
-
+                        A pesar de estos desafíos, Argentina mantiene una ventaja competitiva estructural basada en sus recursos naturales de clase mundial.
+                        El potencial eólico en la Patagonia es excepcional, con factores de capacidad que pueden llegar al 60%, superando ampliamente los promedios de Europa (25%) y Estados Unidos (35%).
+                        De igual forma, el Noroeste argentino ofrece niveles de irradiación solar entre los mejores del planeta, con rendimientos superiores en un 15-20% a otras regiones comparables.
+                        Estos recursos no solo permiten generar electricidad barata, sino que habilitan sinergias con vectores energéticos emergentes como la producción de hidrógeno verde, el desarrollo de la cadena de valor del litio y las baterías para almacenamiento, y la electromovilidad.
+                        </p>
                     <h2>6. Desafíos y Cuellos de Botella</h2>
                     <p>
-                        Sin embargo, para capitalizar estas oportunidades, es imperativo resolver cuellos de botella críticos. En el plano técnico, la saturación de la red de transmisión eléctrica es el obstáculo físico más inmediato; la infraestructura de alta tensión está al límite y no puede evacuar la energía de las zonas con mejores recursos sin inversiones masivas. En el plano macroeconómico, la volatilidad cambiaria, la inflación crónica y la falta de acceso a crédito a tasas competitivas siguen siendo barreras que dificultan la planificación a largo plazo. Además, surgen desafíos socioambientales, como el riesgo de conflictos territoriales y la necesidad de gestionar los residuos de los equipos al final de su vida útil.
-                    </p>
-
-                    
+                        Sin embargo, para capitalizar estas oportunidades, es imperativo resolver cuellos de botella críticos.
+                        En el plano técnico, la saturación de la red de transmisión eléctrica es el obstáculo físico más inmediato;
+                        la infraestructura de alta tensión está al límite y no puede evacuar la energía de las zonas con mejores recursos sin inversiones masivas.
+                        En el plano macroeconómico, la volatilidad cambiaria, la inflación crónica y la falta de acceso a crédito a tasas competitivas siguen siendo barreras que dificultan la planificación a largo plazo.
+                        Además, surgen desafíos socioambientales, como el riesgo de conflictos territoriales y la necesidad de gestionar los residuos de los equipos al final de su vida útil.
+                        </p>
                     <h2>7. Hacia una Estrategia Ecodesarrollista</h2>
                     <p>
-                        Frente a esta encrucijada, se plantea la necesidad de un nuevo enfoque estratégico denominado "ecodesarrollista", que sintetice las visiones del neodesarrollismo (centrado en la competitividad industrial y la solución de la restricción externa) y los ambientalismos latinoamericanos (centrados en la justicia social y la descentralización). Este enfoque propone operar en una "zona óptima" que respete los límites ecológicos del planeta mientras garantiza un piso de bienestar social, evitando caer en un modelo de "extractivismo verde" que se limite a exportar recursos sin valor agregado.
-                    </p>
+                        Frente a esta encrucijada, se plantea la necesidad de un nuevo enfoque estratégico denominado "ecodesarrollista", que sintetice las visiones del neodesarrollismo (centrado en la competitividad industrial y la solución de la restricción externa) y los ambientalismos latinoamericanos (centrados en la justicia social y la descentralización).
+                        Este enfoque propone operar en una "zona óptima" que respete los límites ecológicos del planeta mientras garantiza un piso de bienestar social, evitando caer en un modelo de "extractivismo verde" que se limite a exportar recursos sin valor agregado.
+                        </p>
                     <p>
-                        La estrategia futura debe basarse en tres pilares prescriptivos: una estabilidad macroeconómica que permita financiamiento, una planificación inexcusable de la infraestructura de transmisión y una política de Estado coherente que equilibre la atracción de inversiones con el desarrollo tecnológico local y la inclusión social. La decisión que tome el país definirá si las energías renovables serán meramente un commodity de exportación o la palanca para una transformación productiva, tecnológica y social profunda en el siglo XXI.
-                    </p>
+                        La estrategia futura debe basarse en tres pilares prescriptivos: una estabilidad macroeconómica que permita financiamiento, una planificación inexcusable de la infraestructura de transmisión y una política de Estado coherente que equilibre la atracción de inversiones con el desarrollo tecnológico local y la inclusión social.
+                        La decisión que tome el país definirá si las energías renovables serán meramente un commodity de exportación o la palanca para una transformación productiva, tecnológica y social profunda en el siglo XXI.
+                        </p>
                 </div>
             </article>
         </section>
@@ -646,11 +765,9 @@
         <section id="mapa" class="section">
             <article class="card">
                 <div id="leaflet-map"></div>
-                
                 <button id="sidebar-toggle-mapa" onclick="toggleSidebarMap()">
                     <i class="fas fa-list"></i>
                 </button>
-
                 <div id="sidebar-mapa">
                     <h2>Plantas Energéticas 🇦🇷</h2>
                     <div id="plant-list-container">
@@ -669,8 +786,8 @@
 
         <footer id="footer-card" class="card" style="margin-top: 18px;">
             <strong>Bibliografía y créditos</strong><br>
-            Aquí iremos listando las fuentes (informes oficiales, Google Sheets, artículos científicos, libros). 
-            <br><small style="opacity:.85">Puedes añadir los enlaces o referencias en el Google Sheet de bibliografía y los insertamos luego.</small>
+            Aquí iremos listando las fuentes 
+            (informes oficiales, Google Sheets, artículos científicos, libros). <br><small style="opacity:.85">Puedes añadir los enlaces o referencias en el Google Sheet de bibliografía y los insertamos luego.</small>
         </footer>
 
     </main>
@@ -679,78 +796,68 @@
         /* Variables y Configuración */
         const sidebarNav = document.getElementById('sidebar-nav');
         const menuToggle = document.getElementById('menu-toggle');
-        const sections = Array.from(document.querySelectorAll('.section'));
-        const navButtons = Array.from(document.querySelectorAll('.nav-btn'));
+        const mainContent = document.getElementById('main-content');
+        const sections = document.querySelectorAll('.section');
+        const navButtons = document.querySelectorAll('.nav-btn');
+        let map = null;
+        let markers = {}; 
         
-        // Variables globales para el mapa
-        let map;
-        const markers = {};
-
-        // 5. Datos: Arreglo de plantas energéticas en Argentina
-        const plantsData = [
-            // RUTAS CORREGIDAS A 'assets/nombre-del-archivo.jpg'
-            { id: 1, nombre: "Parque Eólico Arauco", tipo: "eólica", lat: -30.0768, lng: -67.0908, imagen: "assets/arauco.jpg", produccion: "620 GWh/año", provincia: "La Rioja" },
-            { id: 2, nombre: "Parque Solar Cauchari", tipo: "solar", lat: -23.7550, lng: -66.9050, imagen: "assets/cauchari.jpg", produccion: "1050 GWh/año", provincia: "Jujuy" },
-            { id: 3, nombre: "Central Hidroeléctrica Yacyretá", tipo: "hidroeléctrica", lat: -27.4861, lng: -56.7667, imagen: "assets/yacyreta.jpg", produccion: "18500 GWh/año", provincia: "Corrientes" },
-            { id: 4, nombre: "Central Termoeléctrica Costanera", tipo: "fósil", lat: -34.6142, lng: -58.3497, imagen: "assets/costanera.jpg", produccion: "9000 GWh/año", provincia: "Buenos Aires" },
-            { id: 5, nombre: "Central Nuclear Atucha II", tipo: "nuclear", lat: -33.9786, lng: -59.2078, imagen: "assets/atucha.jpg", produccion: "5500 GWh/año", provincia: "Buenos Aires" },
-            { id: 6, nombre: "Biomasa Puerto Tirol", tipo: "biomasa", lat: -27.3500, lng: -59.0833, imagen: "assets/tirol.jpg", produccion: "85 GWh/año", provincia: "Chaco" },
-            { id: 7, nombre: "Parque Eólico Madryn", tipo: "eólica", lat: -42.8100, lng: -65.1700, imagen: "assets/madryn.jpg", produccion: "700 GWh/año", provincia: "Chubut" },
-            { id: 8, nombre: "Campo Geotérmico Copahue (Ficticio)", tipo: "geotérmica", lat: -37.8667, lng: -71.0500, imagen: "assets/copahue.jpg", produccion: "120 GWh/año", provincia: "Neuquén" },
-            { id: 9, nombre: "Planta Solar San Juan", tipo: "solar", lat: -31.5375, lng: -68.5361, imagen: "assets/sanjuan.jpeg", produccion: "350 GWh/año", provincia: "San Juan" },
-            { id: 10, nombre: "Central Hidroeléctrica El Chocón", tipo: "hidroeléctrica", lat: -39.1917, lng: -68.7917, imagen: "assets/chocon.jpg", produccion: "7000 GWh/año", provincia: "Neuquén" }
+        /* ------------------------------------------- */
+        /* DATOS DEL MAPA                              */
+        /* ------------------------------------------- */
+        // Arreglo con datos de plantas energéticas en Argentina
+        const plantsData = [ // RUTAS CORREGIDAS A 'Assets/nombre-del-archivo.jpg' 
+            { id: 1, nombre: "Parque Eólico Arauco", tipo: "eólica", lat: -30.0768, lng: -67.0908, imagen: "Assets/arauco.jpg", produccion: "620 GWh/año", provincia: "La Rioja" },
+            { id: 2, nombre: "Parque Solar Cauchari", tipo: "solar", lat: -23.7550, lng: -66.9050, imagen: "Assets/cauchari.jpg", produccion: "1050 GWh/año", provincia: "Jujuy" },
+            { id: 3, nombre: "Central Hidroeléctrica Yacyretá", tipo: "hidroeléctrica", lat: -27.4861, lng: -56.7667, imagen: "Assets/yacyreta.jpg", produccion: "18500 GWh/año", provincia: "Corrientes" },
+            { id: 4, nombre: "Central Termoeléctrica Costanera", tipo: "fósil", lat: -34.6142, lng: -58.3497, imagen: "Assets/costanera.jpg", produccion: "9000 GWh/año", provincia: "Buenos Aires" },
+            { id: 5, nombre: "Central Nuclear Atucha II", tipo: "nuclear", lat: -33.9786, lng: -59.2078, imagen: "Assets/atucha.jpg", produccion: "5500 GWh/año", provincia: "Buenos Aires" },
+            { id: 6, nombre: "Biomasa Puerto Tirol", tipo: "biomasa", lat: -27.3500, lng: -59.0833, imagen: "Assets/tirol.jpg", produccion: "85 GWh/año", provincia: "Chaco" },
+            { id: 7, nombre: "Parque Eólico Madryn", tipo: "eólica", lat: -42.8100, lng: -65.1700, imagen: "Assets/madryn.jpg", produccion: "700 GWh/año", provincia: "Chubut" },
+            { id: 8, nombre: "Campo Geotérmico Copahue (Ficticio)", tipo: "geotérmica", lat: -37.8667, lng: -71.0500, imagen: "Assets/copahue.jpg", produccion: "120 GWh/año", provincia: "Neuquén" },
+            { id: 9, nombre: "Planta Solar San Juan", tipo: "solar", lat: -31.5375, lng: -68.5361, imagen: "Assets/sanjuan.jpeg", produccion: "350 GWh/año", provincia: "San Juan" },
+            { id: 10, nombre: "Central Hidroeléctrica El Chocón", tipo: "hidroeléctrica", lat: -39.1917, lng: -68.7917, imagen: "Assets/chocon.jpg", produccion: "3700 GWh/año", provincia: "Neuquén" },
+            { id: 11, nombre: "Central Termoeléctrica San Nicolás", tipo: "fósil", lat: -33.3427, lng: -60.2319, imagen: "Assets/sannicolas.jpg", produccion: "4500 GWh/año", provincia: "Buenos Aires" }
         ];
 
-        // -------------------------------------------
-        // FUNCIONES DEL MENÚ DESPLEGABLE              
-        // -------------------------------------------
+        /* ------------------------------------------- */
+        /* FUNCIONES DE NAVEGACIÓN Y UI                */
+        /* ------------------------------------------- */
 
         function toggleMenu() {
             sidebarNav.classList.toggle('active');
-            const icon = menuToggle.querySelector('i');
-            if (sidebarNav.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
         }
 
-        /* ------------------------------------------- */
-        /* NAVEGACIÓN DE SECCIONES                     */
-        /* ------------------------------------------- */
-
-        function clearActiveNav() {
-            navButtons.forEach(btn => btn.classList.remove('active'));
-        }
-
-        function showSection(id, color, btn) {
-            // Cierra el menú desplegable si está abierto
-            if (sidebarNav.classList.contains('active')) {
-                toggleMenu(); 
-            }
-            
-            // Actualiza botones activos
-            clearActiveNav();
-            if (btn) btn.classList.add('active');
-
-            // Muestra/oculta secciones
-            sections.forEach(sec => {
-                sec.classList.remove('active','visible');
-                if (sec.id === id) {
-                    sec.classList.add('active');
-                    // reflow para animación de entrada
-                    requestAnimationFrame(() => {
-                        sec.classList.add('visible');
-                    });
-                }
+        function showSection(sectionId, color, buttonElement) {
+            // Desactiva todas las secciones y botones
+            sections.forEach(section => {
+                section.classList.remove('active', 'visible');
+            });
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
             });
 
-            // Si se activa la sección del mapa, inicializarlo
-            if (id === 'mapa') {
-                // Pequeño delay para asegurar que el contenedor es visible antes de inicializar Leaflet
-                setTimeout(initMap, 100); 
+            // Activa la sección solicitada y el botón
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+                // Aplica la transición de visibilidad con un pequeño delay
+                setTimeout(() => {
+                    targetSection.classList.add('visible');
+                }, 100); 
+            }
+            if (buttonElement) {
+                buttonElement.classList.add('active');
+            }
+
+            // Lógica específica para la sección del mapa
+            if (sectionId === 'mapa') {
+                if (!map) {
+                    initializeMap();
+                } else {
+                    // Asegurar que el mapa tome la altura correcta después de la inicialización
+                    map.invalidateSize();
+                }
             } else {
                 // Destruir el mapa si no estamos en la sección para liberar recursos
                 if (map) {
@@ -758,18 +865,15 @@
                     map = null;
                 }
             }
-
             // Cambia colores con transición suave
             document.body.style.backgroundColor = color;
             document.querySelector('main').style.backgroundColor = 'transparent';
             document.getElementById('footer-card').style.backgroundColor = 'rgba(236,240,241,0.9)';
         }
 
-
         /* ------------------------------------------- */
         /* FUNCIONES ESPECÍFICAS DEL MAPA (Leaflet)    */
         /* ------------------------------------------- */
-
         const typeIcons = {
             eólica: { icon: 'fa-wind', color: '#2ecc71' },
             solar: { icon: 'fa-sun', color: '#f39c12' },
@@ -783,7 +887,6 @@
         function createCustomIcon(plantType) {
             const iconData = typeIcons[plantType] || { icon: 'fa-question', color: '#000000' };
             const iconHtml = `<div class="marker-icon type-${plantType}" style="border-color:${iconData.color}"><i class="fas ${iconData.icon}"></i></div>`;
-            
             return L.divIcon({
                 className: 'custom-icon',
                 html: iconHtml,
@@ -792,7 +895,7 @@
                 popupAnchor: [0, -30]
             });
         }
-        
+
         function addPlantMarkers() {
             plantsData.forEach(plant => {
                 const icon = createCustomIcon(plant.tipo);
@@ -805,68 +908,77 @@
                         <p><strong>Tipo:</strong> ${plant.tipo.charAt(0).toUpperCase() + plant.tipo.slice(1)}</p>
                         <p><strong>Provincia:</strong> ${plant.provincia}</p>
                         <p><strong>Producción:</strong> ${plant.produccion}</p>
-                        <img src="${plant.imagen}" alt="Imagen de ${plant.nombre}" style="width:100%; height:auto; border-radius: 5px; margin-top: 8px;">
+                        <img src="${plant.imagen}" alt="${plant.nombre}" style="max-width: 100%; height: auto; border-radius: 6px; margin-top: 8px;">
                     </div>
                 `;
 
-                const marker = L.marker(latLng, { icon: icon, id: plant.id, plantType: plant.tipo })
-                    .bindPopup(popupContent)
-                    .addTo(map);
+                const marker = L.marker(latLng, { icon: icon, title: plant.nombre })
+                    .bindPopup(popupContent, { offset: [0, -30], maxWidth: 300 });
 
-                // Evento para resaltar el item de la sidebar al hacer clic en el marcador
                 marker.on('click', () => {
                     highlightSidebarItem(plant.id);
                 });
-                
-                markers[plant.id] = marker; // Almacenar referencia
+
+                markers[plant.id] = marker; // Almacena la referencia del marcador
+                marker.addTo(map);
             });
         }
 
-        function populateSidebar() {
-            const container = document.getElementById('plant-list-container');
-            container.innerHTML = ''; 
+        function populatePlantList() {
+            const listContainer = document.getElementById('plant-list-container');
+            listContainer.innerHTML = ''; // Limpiar el contenido previo
 
             plantsData.forEach(plant => {
                 const iconData = typeIcons[plant.tipo];
                 const item = document.createElement('div');
                 item.className = 'plant-item';
                 item.id = `plant-item-${plant.id}`;
-                item.dataset.plantId = plant.id;
+                item.setAttribute('onclick', `zoomToMarker(${plant.id})`);
 
                 item.innerHTML = `
-                    <h3><span class="icon"><i class="fas ${iconData.icon}" style="color: ${iconData.color};"></i></span>${plant.nombre} (${plant.provincia})</h3>
+                    <h3>
+                        <span class="icon" style="color:${iconData.color}"><i class="fas ${iconData.icon}"></i></span>
+                        ${plant.nombre}
+                    </h3>
                     <p><strong>Tipo:</strong> ${plant.tipo.charAt(0).toUpperCase() + plant.tipo.slice(1)}</p>
-                    <p><strong>Producción Anual:</strong> ${plant.produccion}</p>
-                    <p style="opacity: 0.7;">Ruta: ${plant.imagen}</p>
+                    <p><strong>Provincia:</strong> ${plant.provincia}</p>
                 `;
-
-                // Sincronización: Al hacer clic en el item, centrar el mapa
-                item.addEventListener('click', () => {
-                    zoomToMarker(plant.id);
-                    highlightSidebarItem(plant.id);
-                });
-
-                container.appendChild(item);
+                listContainer.appendChild(item);
             });
         }
 
-        function initMap() {
-            if (map) return; // Ya inicializado
-            
-            const center = [-34.5, -64.0]; 
-            const initialZoom = 5;
+        function initializeMap() {
+            // Coordenadas centrales de Argentina
+            const centerLat = -34;
+            const centerLng = -64;
 
-            // Inicializar el mapa en el div con id='leaflet-map'
-            map = L.map('leaflet-map').setView(center, initialZoom);
+            map = L.map('leaflet-map', {
+                center: [centerLat, centerLng],
+                zoom: 4, 
+                minZoom: 3, 
+                maxZoom: 10,
+                zoomControl: false 
+            });
 
-            // Capa de tiles (OpenStreetMap)
+            // Añadir capa de tiles (OpenStreetMap)
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
+            // Añadir control de zoom personalizado en otra posición
+            L.control.zoom({
+                position: 'topright'
+            }).addTo(map);
+            
+            // Llenar la lista lateral y añadir los marcadores
+            populatePlantList();
             addPlantMarkers();
-            populateSidebar();
+
+            // Evento para deseleccionar el item de la sidebar al cerrar un popup del mapa
+            map.on('popupclose', (e) => {
+                highlightSidebarItem(null); 
+            });
 
             // Asegurar que el mapa tome la altura correcta después de la inicialización
             map.invalidateSize();
@@ -878,9 +990,10 @@
         function zoomToMarker(plantId) {
             const marker = markers[plantId];
             if (marker) {
-                map.flyTo(marker.getLatLng(), 10, { duration: 0.8 }); 
+                map.flyTo(marker.getLatLng(), 10, { duration: 0.8 });
                 marker.openPopup();
             }
+            highlightSidebarItem(plantId);
         }
 
         function highlightSidebarItem(plantId) {
