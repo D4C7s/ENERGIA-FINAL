@@ -362,6 +362,108 @@
  }
 
         /* ------------------------------------------- */
+        /* ESTILOS ESPECÍFICOS DE CALCULADORA (SECTION #simulador) */
+        /* ------------------------------------------- */
+        :root{--accent:#06b6d4;--muted:#94a3b8;--danger:#ef4444;--ok:#22c55e}
+    
+        #simulador {
+            /* Simula el fondo oscuro del código de la calculadora */
+            background: linear-gradient(180deg, #071032, #071a2a); 
+            color: #e6eef6;
+            min-height: 90vh; 
+            padding: 0; 
+        }
+
+        #calculator-container{
+            width:100%;
+            min-height: 90vh;
+            padding:24px 36px;
+        }
+
+        #simulador h1, #simulador h2, #simulador h3 { color: #e6eef6; margin-bottom: 8px; }
+        #simulador p { color: #e6eef6; } /* Asegurar que el texto sea visible */
+        #simulador .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .calc-header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+        .calc-header h1{margin:0;font-size:22px}
+
+        .visual-zone{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap:16px;
+            margin-bottom:24px;
+        }
+        .visual-card{
+            background:rgba(255,255,255,0.05);
+            border-radius:16px;
+            padding:18px;
+            min-height:160px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+        .visual-icon{font-size:64px;margin-bottom:8px}
+        .visual-title{font-weight:700}
+
+        .cables{
+            width:100%;height:6px;
+            background:repeating-linear-gradient(90deg,#38bdf8 0px,#38bdf8 20px,transparent 20px,transparent 40px);
+            border-radius:999px;box-shadow:0 0 10px #38bdf8;margin:16px 0;
+        }
+
+        .bottom-zone{
+            display:grid;
+            grid-template-columns:420px 1fr;
+            gap:18px;
+            margin-bottom:48px;
+        }
+
+        #simulador label{display:block;font-size:13px;color:var(--muted);margin-top:12px}
+        #simulador select{
+            width:100%;padding:10px;margin-top:6px;
+            border-radius:8px;border:none;
+            background:rgba(0,0,0,0.3);color:white;
+        }
+
+        .btn{
+            margin-top:16px;width:100%;padding:12px;border-radius:10px;
+            background:var(--accent);border:none;color:#042022;font-weight:700;cursor:pointer;
+        }
+
+        .results{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+        .result-row{
+            display:flex;justify-content:space-between;padding:10px;border-radius:8px;
+            background:rgba(0,0,0,0.25);
+        }
+
+        .impact-section{margin-top:40px;}
+
+        .impact-grid{
+            display:flex;
+            gap:16px;
+            margin-top:16px;
+            overflow-x:auto;
+            padding-bottom:10px;
+            scroll-snap-type:x mandatory;
+        }
+        .impact-grid > .impact-card{min-width:260px;flex:0 0 auto;scroll-snap-align:start;}
+
+        .impact-card{
+            background:rgba(0,0,0,0.35);
+            border-radius:14px;
+            padding:16px;
+            text-align:center;
+        }
+
+        .impact-value{font-size:18px;font-weight:700;margin-top:6px}
+
+
+        /* ------------------------------------------- */
         /* RESPONSIVE Y ORIENTACIÓN HORIZONTAL (Mantenido) */
         /* ------------------------------------------- */
         
@@ -393,6 +495,11 @@
  }
             #sidebar-toggle-mapa { right: 10px; top: 10px; width: 40px;
  height: 40px; }
+            /* Responsive de la calculadora */
+            #simulador {padding:0;}
+            #calculator-container {padding: 15px 18px;}
+            .visual-zone{grid-template-columns:1fr}
+            .bottom-zone{grid-template-columns:1fr}
         }
     </style>
 </head>
@@ -423,7 +530,7 @@
         <button class="nav-btn" id="btn-mapa" onclick="showSection('mapa','#cce0ff', this)"><i class="fas fa-map-marked-alt"></i><span class="label">5.
  Mapa Interactivo</span></button>
         <button class="nav-btn" id="btn-simulador" onclick="showSection('simulador','#ffb3d9', this)"><i class="fas fa-cogs"></i><span class="label">6.
- Simulador Fotovoltaico</span></button>
+ Calculadora de Energía</span></button>
     </nav>
 
     <main id="main-content">
@@ -787,10 +894,100 @@
         </section>
 
         <section id="simulador" class="section">
-            <article class="card">
-                <h1>Simulador Fotovoltaico</h1>
-                <p>Placeholder para un formulario que permita ingresar irradiación, área, eficiencia del panel, pérdidas y calcular producción estimada.</p>
-            </article>
+            <div id="calculator-container">
+                <header class="calc-header">
+                    <i class="fa-solid fa-bolt fa-2x" style="color:var(--accent)"></i>
+                    <div>
+                        <h1>Calculadora de Energía</h1>
+                        <div style="color:var(--muted)">Tiempo necesario + impacto ambiental por simulación</div>
+                    </div>
+                </header>
+
+                <div class="visual-zone">
+                    <div class="visual-card">
+                        <div id="energyIcon" class="visual-icon">☀️</div>
+                        <div id="energyTitle" class="visual-title">Energía Solar</div>
+                        <div style="color:var(--muted)">Fuente</div>
+                    </div>
+
+                    <div class="visual-card">
+                        <div class="visual-title">Transmisión</div>
+                        <div class="cables"></div>
+                        <div style="color:var(--muted)">Red eléctrica</div>
+                    </div>
+
+                    <div class="visual-card">
+                        <div id="deviceIcon" class="visual-icon">📱</div>
+                        <div id="deviceTitle" class="visual-title">Celular</div>
+                        <div style="color:var(--muted)">Dispositivo</div>
+                    </div>
+                </div>
+
+                <div class="bottom-zone">
+
+                    <div class="card">
+                        <h3>Seleccioná la situación</h3>
+
+                        <label>Dispositivo a alimentar</label>
+                        <select id="device">
+                            <option value="cell">Celular (15 Wh)</option>
+                            <option value="computer">Computadora (300 Wh)</option>
+                            <option value="tv">Televisión (150 Wh)</option>
+                            <option value="house">Casa (1 día) 12 kWh</option>
+                            <option value="school">Colegio (1 día) 350 kWh</option>
+                            <option value="stadium">Estadio de Boca (partido) 40 MWh</option>
+                        </select>
+
+                        <label>Tipo de energía</label>
+                        <select id="energy">
+                            <option value="solar">Solar</option>
+                            <option value="wind">Eólica</option>
+                            <option value="hydro">Hidráulica</option>
+                            <option value="geothermal">Geotérmica</option>
+                            <option value="biomass">Biomasa</option>
+                            <option value="marine">Energía del mar</option>
+                            <option value="fossil">Combustibles fósiles</option>
+                            <option value="nuclear">Nuclear</option>
+                        </select>
+
+                        <button id="calc" class="btn">Calcular</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Resultados</h3>
+                        <div id="results" class="results">
+                            <div style="color:var(--muted)">Esperando cálculo...</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <section class="impact-section">
+                    <h2>Desperdicios e Impacto Ambiental (por simulación)</h2>
+                    <div id="impactGrid" class="impact-grid">
+                        <div class="impact-card"><div>Emisión de CO₂</div><div id="co2" class="impact-value">—</div></div>
+                        <div class="impact-card"><div>SO₂</div><div id="so2" class="impact-value">—</div></div>
+                        <div class="impact-card"><div>NOx</div><div id="nox" class="impact-value">—</div></div>
+                        <div class="impact-card"><div>Residuo general</div><div id="waste" class="impact-value">—</div></div>
+                        <div class="impact-card"><div>Residuo radiactivo</div><div id="nuclearWaste" class="impact-value">—</div></div>
+                        <div class="impact-card"><div>Tiempo de peligrosidad</div><div id="dangerTime" class="impact-value">—</div></div>
+                    </div>
+                </section>
+
+                <section class="impact-section">
+                    <h2>Gráficos Comparativos (mismo dispositivo)</h2>
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <h3>Costo en dólares (USD)</h3>
+                            <canvas id="costChart"></canvas>
+                        </div>
+                        <div class="impact-card">
+                            <h3>Emisión de CO₂</h3>
+                            <canvas id="co2Chart"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <footer id="footer-card" class="card" style="margin-top: 18px;">
@@ -799,6 +996,8 @@
             (informes oficiales, Google Sheets, artículos científicos, libros). <br><small style="opacity:.85">Puedes añadir los enlaces o referencias en el Google Sheet de bibliografía y los insertamos luego.</small>
         </footer>
     </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
         /* Variables y Configuración */
@@ -875,13 +1074,23 @@
             }
 
             // Cambia colores con transición suave
-            document.body.style.backgroundColor = color;
+            let targetColor = color;
+            if (sectionId === 'simulador') {
+                 // Si es la calculadora, el body se mantiene claro pero la sección es oscura (ver CSS)
+                 targetColor = '#f9f9f9'; 
+            }
+            document.body.style.backgroundColor = targetColor;
             document.querySelector('main').style.backgroundColor = 'transparent';
             document.getElementById('footer-card').style.backgroundColor = 'rgba(236,240,241,0.9)';
+            
+            // Si es la calculadora, forzar el primer cálculo para mostrar gráficos
+            if (sectionId === 'simulador') {
+                setTimeout(calcular, 200); 
+            }
         }
 
         /* ------------------------------------------- */
-        /* FUNCIONES ESPECÍFICAS DEL MAPA (Leaflet) */
+        /* FUNCIONES ESPECÍFICAS DEL MAPA (Leaflet)    */
         /* ------------------------------------------- */
 
         const typeIcons = {
@@ -1010,6 +1219,201 @@
 
 
         /* ------------------------------------------- */
+        /* FUNCIONES ESPECÍFICAS DE LA CALCULADORA     */
+        /* ------------------------------------------- */
+        
+        const DEVICES = {
+            cell:{name:'Celular',Wh:15},
+            computer:{name:'Computadora',Wh:300},
+            tv:{name:'Televisión',Wh:150},
+            house:{name:'Casa (1 día)',Wh:12000},
+            school:{name:'Colegio (1 día)',Wh:350000},
+            stadium:{name:'Estadio de Boca (partido)',Wh:40000000}
+        };
+        const ENERGY_POWER = {solar:500, wind:2000, hydro:100000, geothermal:50000, biomass:30000, marine:20000, fossil:1000000, nuclear:300000000};
+        const CO2 = {solar:0.05, wind:0.02, hydro:0.02, geothermal:0.04, biomass:0.1, marine:0.03, fossil:0.9, nuclear:0.01};
+        const SO2 = {fossil:0.02};
+        const NOX = {fossil:0.015};
+        const NUCLEAR_WASTE = "Alta actividad";
+        const NUCLEAR_DANGER = "10.000 – 100.000 años";
+        const ENERGY_NAMES = {solar:'Energía Solar', wind:'Energía Eólica', hydro:'Energía Hidráulica', geothermal:'Energía Geotérmica', biomass:'Biomasa', marine:'Energía del Mar', fossil:'Combustibles Fósiles', nuclear:'Energía Nuclear'};
+        const ENERGY_ICONS = {solar:'☀️',wind:'🌬️',hydro:'💧',geothermal:'🌋',biomass:'🌿',marine:'🌊',fossil:'🏭',nuclear:'☢️'};
+        const DEVICE_ICONS = {cell:'📱',computer:'💻',tv:'📺',house:'🏠',school:'🏫',stadium:'🏟️'};
+        const ENERGY_COST = {solar:0.04, wind:0.03, hydro:0.025, geothermal:0.05, biomass:0.06, marine:0.07, fossil:0.12, nuclear:0.08};
+
+        function fmtTime(h){ 
+            if(h<1) return `${Math.round(h*60)} minutos`; 
+            if(h<24) return `${h.toFixed(2)} horas`;
+            return `${(h/24).toFixed(2)} días`; 
+        }
+        function fmtWh(v){ 
+            if(v>=1e6) return (v/1e6).toFixed(2)+' MWh'; 
+            if(v>=1e3) return (v/1e3).toFixed(2)+' kWh'; 
+            return Math.round(v)+' Wh';
+        }
+
+        const deviceEl = document.getElementById('device');
+        const energyEl = document.getElementById('energy');
+        const resultsEl = document.getElementById('results');
+        const deviceIcon = document.getElementById('deviceIcon');
+        const deviceTitle = document.getElementById('deviceTitle');
+        const energyIcon = document.getElementById('energyIcon');
+        const energyTitle = document.getElementById('energyTitle');
+
+        function updateVisual(){
+            const d = deviceEl.value; 
+            const e = energyEl.value;
+            deviceIcon.innerText = DEVICE_ICONS[d]; 
+            deviceTitle.innerText = DEVICES[d].name;
+            energyIcon.innerText = ENERGY_ICONS[e]; 
+            energyTitle.innerText = ENERGY_NAMES[e];
+        }
+
+        let costChart, co2Chart;
+
+        function buildCharts(deviceKey){
+            const device = DEVICES[deviceKey];
+            const labels = Object.values(ENERGY_NAMES);
+            const backgroundColors = Object.keys(ENERGY_NAMES).map(e => {
+                const colorMap = {
+                    solar:'#f39c12', wind:'#2ecc71', hydro:'#3498db', geothermal:'#e74c3c', 
+                    biomass:'#8e44ad', marine:'#06b6d4', fossil:'#7f8c8d', nuclear:'#95a5a6'
+                };
+                return colorMap[e] || '#ccc';
+            });
+
+            const costData = Object.keys(ENERGY_NAMES).map(e=>{
+                const kWh = device.Wh/1000;
+                return +(kWh * ENERGY_COST[e]).toFixed(3);
+            });
+            const co2Data = Object.keys(ENERGY_NAMES).map(e=>{
+                const kWh = device.Wh/1000;
+                return +(kWh * CO2[e]).toFixed(3);
+            });
+
+            if(costChart) costChart.destroy();
+            if(co2Chart) co2Chart.destroy();
+
+            costChart = new Chart(document.getElementById('costChart'),{
+                type:'bar',
+                data:{
+                    labels:labels,
+                    datasets:[{
+                        label:'USD',
+                        data:costData,
+                        backgroundColor: backgroundColors
+                    }]
+                },
+                options:{
+                    responsive:true,
+                    plugins:{
+                        legend:{display:false}
+                    },
+                    scales: {
+                        y: {
+                            ticks: {
+                                color: 'white' // Color para el eje Y
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)' // Color de las líneas de la grilla
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: 'white' // Color para el eje X
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        }
+                    }
+                }
+            });
+
+            co2Chart = new Chart(document.getElementById('co2Chart'),{
+                type:'bar',
+                data:{
+                    labels:labels,
+                    datasets:[{
+                        label:'kg CO₂',
+                        data:co2Data,
+                        backgroundColor: backgroundColors
+                    }]
+                },
+                options:{
+                    responsive:true,
+                    plugins:{
+                        legend:{display:false}
+                    },
+                    scales: {
+                        y: {
+                            ticks: {
+                                color: 'white' 
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)' 
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: 'white' 
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function calcular(){
+            const d = DEVICES[deviceEl.value];
+            const e = energyEl.value;
+            const energiaNecesaria = d.Wh; 
+            const potenciaFuente = ENERGY_POWER[e];
+            const tiempoHoras = energiaNecesaria / potenciaFuente;
+
+            resultsEl.innerHTML = `
+                <div class='result-row'><strong>Dispositivo</strong><span>${d.name}</span></div>
+                <div class='result-row'><strong>Energía</strong><span>${ENERGY_NAMES[e]}</span></div>
+                <div class='result-row'><strong>Energía requerida</strong><span>${fmtWh(energiaNecesaria)}</span></div>
+                <div class='result-row'><strong>Potencia de la fuente</strong><span>${fmtWh(potenciaFuente)} / h</span></div>
+                <div class='result-row'><strong>Tiempo necesario</strong><span>${fmtTime(tiempoHoras)}</span></div>
+            `;
+            
+            const kWh = energiaNecesaria / 1000;
+            const emisiones = (kWh * CO2[e]).toFixed(3);
+
+            document.getElementById('co2').innerText = `${emisiones} kg CO₂`;
+
+            // Resetear valores de residuos nucleares
+            document.getElementById('nuclearWaste').innerText = 'No aplica';
+            document.getElementById('dangerTime').innerText = '—';
+            document.getElementById('so2').innerText = '0 kg';
+            document.getElementById('nox').innerText = '0 kg';
+
+            if(['solar','wind','hydro','geothermal','biomass','marine'].includes(e)){
+                document.getElementById('waste').innerText = 'Residuos de fabricación/desmantelamiento';
+            }
+
+            if(e === 'fossil'){
+                document.getElementById('waste').innerText = 'Cenizas + gases';
+                document.getElementById('so2').innerText = (kWh * SO2.fossil).toFixed(4) + ' kg';
+                document.getElementById('nox').innerText = (kWh * NOX.fossil).toFixed(4) + ' kg';
+            }
+
+            if(e === 'nuclear'){
+                document.getElementById('waste').innerText = 'Residuos tecnológicos';
+                document.getElementById('nuclearWaste').innerText = NUCLEAR_WASTE;
+                document.getElementById('dangerTime').innerText = NUCLEAR_DANGER;
+            } 
+            
+            // Actualizar gráficos
+            buildCharts(deviceEl.value);
+        }
+        
+        /* ------------------------------------------- */
         /* INICIALIZACIÓN GLOBAL                       */
         /* ------------------------------------------- */
         document.addEventListener('DOMContentLoaded', () => {
@@ -1028,7 +1432,18 @@
                     toggleMenu();
                 }
             });
+            
+            // Inicializar la calculadora
+            if(document.getElementById('simulador').classList.contains('active')) {
+                 updateVisual();
+                 calcular(); // Realizar el primer cálculo al cargar la sección si está activa
+            }
         });
+
+        // Event Listeners de la calculadora
+        deviceEl.addEventListener('change', updateVisual);
+        energyEl.addEventListener('change', updateVisual);
+        document.getElementById('calc').addEventListener('click', calcular);
     </script>
 
 </body>
